@@ -1,0 +1,19 @@
+{
+  "name": "shed-frontend-bootstrapper",
+  "version": "0.0.1",
+  "description": "Bootstrapping package for shed frontend packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shedcollective/shed-frontend-bootstrapper.git"
+  },
+  "author": "Shaun McWhinnie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shedcollective/shed-frontend-bootstrapper/issues"
+  },
+  "homepage": "https://github.com/shedcollective/shed-frontend-bootstrapper#readme"
+}
