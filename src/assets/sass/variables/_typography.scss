@@ -1,0 +1,27 @@
+// Variables: Typography
+// =====================
+
+$headings: 'h1, h2, h3, h4, h5, h6';
+
+$alignment: (
+    left,
+    center,
+    right
+);
+
+$font-weights: (
+    bold: bold,
+    normal: normal,
+    lighter: 300
+);
+
+$typestyles: (
+    xxxxl: (font-size: 50px, line-height: 71px),
+    xxxl: (font-size: 40px, line-height: 52px),
+    xxl:  (font-size: 34px, line-height: 44px),
+    xl:   (font-size: 30px, line-height: 30px),
+    lg:   (font-size: 24px, line-height: 31px),
+    md:   (font-size: 22px, line-height: 26px),
+    sm:   (font-size: 18px, line-height: 30px),
+    xs:   (font-size: 16px, line-height: 18px),
+);
