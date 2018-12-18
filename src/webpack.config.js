@@ -1,16 +1,19 @@
 const path = require('path');
-const glob = require('glob');
+
+// These will be provided by ENV vars
+// NAILS
+const WEBPACK_INPUT_PATH = './assets/js/';
+const WEBPACK_OUTPUT_PATH = '../../build/'; // <- Should look at using an absolute path rather than the hops here.
+
+// LARAVEL
+// const WEBPACK_INPUT_PATH = './resources/assets/js/';
+// const WEBPACK_OUTPUT_PATH = '/public/'; <- Not sure if this needs to be relative to the source or not - as above
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const entry = glob.sync()
-    .reduce((x, y) => Object.assign(x, {
-        [y]: y,
-    }), {});
-
 module.exports = {
     entry: {
-        app: './assets/js/app.js',
+        app: path.resolve(WEBPACK_INPUT_PATH, '/app.js'),
         admin: './assets/js/admin.js',
     },
     output: {
@@ -37,7 +40,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: '../../build/css/[name].css'
+            filename: path.resolve(WEBPACK_OUTPUT_PATH, 'css/[name].css');
         }),
     ]
 };
