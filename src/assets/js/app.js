@@ -1,6 +1,6 @@
 // CSS Imports 💄
 // --------------------------------------------------------------------------
-import '../sass/app.scss';
+import '../sass/app/app.scss';
 
 
 // Vendor Imports 📦

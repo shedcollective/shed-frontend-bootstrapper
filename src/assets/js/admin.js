@@ -1,3 +1,3 @@
 // CSS Imports
 // --------------------------------------------------------------------------
-import '../sass/admin.scss';
+import '../sass/admin/admin.scss';
