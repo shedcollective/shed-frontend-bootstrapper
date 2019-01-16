@@ -1,4 +1,5 @@
 # Components
+
 Components are larger building blocks of a website - these are roughly equivalent to the blocks in BEM syntaxing. Components can contain other objects and components. Components are context aware.
 
 
