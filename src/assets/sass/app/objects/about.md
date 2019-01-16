@@ -1,4 +1,5 @@
 # Objects
+
 The smallest building blocks of a website. They cannot contain other objects or components. They are context independent.
 
 
