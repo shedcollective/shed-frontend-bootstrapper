@@ -18,6 +18,6 @@ import Test from './app/Test.js';
 // App kickoff 🚀
 // --------------------------------------------------------------------------
 
-_APP = (function() {
+(function() {
     new Test();
 })();
