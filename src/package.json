@@ -1,7 +1,7 @@
 {
     "name": "my-project",
     "version": "1.0.0",
-    "description": "Project build with shed-frontend-boostrapper - update this with `yarn init`",
+    "description": "Project built with shed-frontend-boostrapper - update this with `yarn init`",
     "author": "hello@shedcollective.org",
     "license": "ISC",
     "devDependencies": {
@@ -24,6 +24,6 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules"
     },
     "dependencies": {
-        "bootstrap-sass": "^3.3.7"
+        "bootstrap": "^4.3.1"
     }
 }
