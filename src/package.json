@@ -5,7 +5,10 @@
     "author": "hello@shedcollective.org",
     "license": "ISC",
     "devDependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/preset-env": "^7.2.3",
         "autoprefixer": "^9.4.2",
+        "babel-loader": "^8.0.6",
         "cross-env": "^5.2.0",
         "css-loader": "^2.0.0",
         "jshint-stylish": "^2.0",
@@ -13,7 +16,10 @@
         "node-sass": "^4.9.3",
         "postcss-loader": "^3.0.0",
         "sass-loader": "^7.1.0",
+        "vue-loader": "^15.9.0",
+        "vue-template-compiler": "^2.6.11",
         "webpack": "^4.27.1",
+        "webpack-bundle-analyzer": "^3.6.1",
         "webpack-cli": "^3.1.2"
     },
     "scripts": {
@@ -24,6 +30,11 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules"
     },
     "dependencies": {
-        "bootstrap": "^4.3.1"
+        "axios": "^0.19.2",
+        "bootstrap": "^4.3.1",
+        "bootstrap-sass": "^3.4.1",
+        "core-js": "3",
+        "vue": "^2.6.11",
+        "vue-multiselect": "^2.1.6"
     }
 }
