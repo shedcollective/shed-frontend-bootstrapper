@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
-module.exports = ()  => {
+module.exports = () => {
 
     const VALID_ENVIRONMENTS = ['production', 'development', 'none'];
     const ENVIRONMENT = process.env.NODE_ENV.toLowerCase();
@@ -50,20 +50,14 @@ module.exports = ()  => {
                     test: /\.(css|scss|sass)$/,
                     use: [
                         MiniCssExtractPlugin.loader,
-                        'css-loader',
                         {
-                            loader: 'postcss-loader',
+                            loader: 'css-loader',
                             options: {
-                                plugins: () => [require('autoprefixer')]
+                                url: false
                             }
                         },
-                        {
-                            loader: 'sass-loader',
-                            options: {
-                                sourceMap: true,
-                                sourceMapContents: false
-                            }
-                        }
+                        'postcss-loader',
+                        'sass-loader'
                     ]
                 }
             ]
@@ -85,7 +79,7 @@ module.exports = ()  => {
                 filename: '../../build/css/[name].css',
             }),
             new VueLoaderPlugin(),
-            mode==='production' ? new BundleAnalyzerPlugin({
+            mode === 'production' ? new BundleAnalyzerPlugin({
                 analyzerMode: 'static',
                 reportFilename: 'buildReport.html'
             }) : false,
